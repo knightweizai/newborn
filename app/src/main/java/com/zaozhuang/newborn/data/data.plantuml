@@ -1,0 +1,168 @@
+@startuml
+
+title __DATA's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.ConfigData {
+            + address : String
+            + agoraMainShow : Boolean
+            + agreement : String
+            + appType : String
+            + cityCode : String
+            + currentVersionCode : Integer
+            + currentVersionName : String
+            + id : Integer
+            + isFirst : String
+            + isFirstHot : String
+            + isFirstJoinMain : boolean
+            + isFirstJoinStartSel : boolean
+            + isFirstLoadGuide : boolean
+            + isFirstRoom : String
+            + isOpenMessageTips : boolean
+            + lowestForcedVersionCode : Integer
+            + mapMainFlag : boolean
+            + needForcedUpgrade : Boolean
+            + rechargeFirstTime : HashMap<String, Long>
+            + recommendTime : long
+            + reviewFlag : Boolean
+            + time : long
+            + upgradeApkUrl : Object
+            + upgradeCopy : String
+            + upgradeVersion : Boolean
+            + whiteListUsers : List<Long>
+            + youngModeMap : HashMap<String, Long>
+            + youngModeSafetyMode : boolean
+            + youngPassword : String
+            + ConfigData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.InputEntity {
+            + key : String
+            + value : String
+            + InputEntity()
+            + InputEntity()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.UserInfo {
+            + canInvite : boolean
+            + emId : String
+            + identityAuthStatus : int
+            + isLocalNewUser : boolean
+            + localDefaultCarName : String
+            + localDefaultCarPath : String
+            + loginWay : int
+            + manager : boolean
+            + nickName : String
+            + relation : boolean
+            + source : String
+            + userBirthday : Long
+            + userHometown : String
+            + userIcon : String
+            + userId : int
+            + userProfession : String
+            + userQQ : String
+            + userRole : int
+            + userSchool : String
+            + userSex : Integer
+            + userSign : String
+            + userStatus : Integer
+            + userToken : String
+            + userWX : String
+            + worker : boolean
+            + UserInfo()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.UserInfo.UserLevel {
+            + levelBg : String
+            + levelExp : int
+            + levelIcon : String
+            + levelName : String
+            + maxLevel : int
+            + userExp : int
+            + userId : int
+            + userLevel : int
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.UserInfo.UserSensitiveBean {
+            + userMobile : String
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.UserInfo.UserStat {
+            + attentionCnt : int
+            + fansCnt : int
+            + toString()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace data {
+        class com.zaozhuang.newborn.data.UserInfo.UserStat.UserLuckyStat {
+            + luckyCnt : int
+            + luckyMaxCnt : int
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.data.UserInfo o-- com.zaozhuang.newborn.data.UserInfo.UserLevel : userCharmLevel
+  com.zaozhuang.newborn.data.UserInfo o-- com.zaozhuang.newborn.data.UserInfo.UserLevel : userContributionLevel
+  com.zaozhuang.newborn.data.UserInfo o-- com.zaozhuang.newborn.data.UserInfo.UserLevel : userNobleLevel
+  com.zaozhuang.newborn.data.UserInfo o-- com.zaozhuang.newborn.data.UserInfo.UserSensitiveBean : userSensitive
+  com.zaozhuang.newborn.data.UserInfo o-- com.zaozhuang.newborn.data.UserInfo.UserStat : userStat
+  com.zaozhuang.newborn.data.UserInfo +-down- com.zaozhuang.newborn.data.UserInfo.UserLevel
+  com.zaozhuang.newborn.data.UserInfo +-down- com.zaozhuang.newborn.data.UserInfo.UserSensitiveBean
+  com.zaozhuang.newborn.data.UserInfo +-down- com.zaozhuang.newborn.data.UserInfo.UserStat
+  com.zaozhuang.newborn.data.UserInfo.UserStat o-- com.zaozhuang.newborn.data.UserInfo.UserStat.UserLuckyStat : userLuckyStat
+  com.zaozhuang.newborn.data.UserInfo.UserStat +-down- com.zaozhuang.newborn.data.UserInfo.UserStat.UserLuckyStat
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

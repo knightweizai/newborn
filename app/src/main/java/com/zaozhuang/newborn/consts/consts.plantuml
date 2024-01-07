@@ -1,0 +1,291 @@
+@startuml
+
+title __CONSTS's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace consts {
+        interface com.zaozhuang.newborn.consts.ApiParam {
+            {static} + ACCEPT_UID : String
+            {static} + ACCEPT_UID_S : String
+            {static} + AMOUNT : String
+            {static} + APPID : String
+            {static} + APPTYPE : String
+            {static} + APP_ID_VALUE : int
+            {static} + APP_SECRET : String
+            {static} + BANK_CARD_NUMBER : String
+            {static} + BANK_NAME : String
+            {static} + BILL_TYPE : String
+            {static} + BINGUSERID : String
+            {static} + BIZ_CODE : String
+            {static} + BOX_ID : String
+            {static} + BOX_NUM : String
+            {static} + CAPTCHA : String
+            {static} + CAR_ID : String
+            {static} + CAR_LOCK : String
+            {static} + CATEGORY_TYPE : String
+            {static} + CERTIFY_ID : String
+            {static} + CERT_NAME : String
+            {static} + CERT_NO : String
+            {static} + CHANNEL : String
+            {static} + CHANNEL_CODE : String
+            {static} + CHECK_SUM : String
+            {static} + CONFIGIDSSTR : String
+            {static} + CONTENT : String
+            {static} + CTBAPP : String
+            {static} + CURRENT_PAGE : String
+            {static} + DATA_ID : String
+            {static} + DATA_VALUE : String
+            {static} + DEVICEMODEL : String
+            {static} + DEVICE_ID : String
+            {static} + DISTANCE : String
+            {static} + DRESSED_ID : String
+            {static} + DRESSED_TYPE : String
+            {static} + EMOTICON_ID : String
+            {static} + EMOTICON_URL : String
+            {static} + ENCRYPT_STR : String
+            {static} + EXPANSION_ID : String
+            {static} + FEEDBACK : String
+            {static} + FEED_BACKGROUND : String
+            {static} + FEED_CONTENT : String
+            {static} + FILES : String
+            {static} + FILE_ID : String
+            {static} + FILE_IDS : String
+            {static} + FLAGNAME : String
+            {static} + FLAGVALUE : String
+            {static} + FLEET_CHANNEL_CODE : String
+            {static} + FLEET_DESC : String
+            {static} + FLEET_NAME : String
+            {static} + FLEET_TAGS : String
+            {static} + FORBIDDEN_MINUTE : String
+            {static} + FORBIDDEN_REASON : String
+            {static} + FORBIDDEN_TYPE : String
+            {static} + GAME_ID : String
+            {static} + GIFT_ID : String
+            {static} + GIFT_NUM : String
+            {static} + GOODS_ID : String
+            {static} + HEADIMGURL : String
+            {static} + HEADIMG_URL : String
+            {static} + HOST : String
+            {static} + IDENTITY_CARD_ICON_A : String
+            {static} + IDENTITY_CARD_ICON_B : String
+            {static} + IDENTITY_CARD_ICON_HOLD : String
+            {static} + IMAGES : String
+            {static} + IMAGE_UL : String
+            {static} + IMEI : String
+            {static} + IMSI : String
+            {static} + INVITE_CODE : String
+            {static} + IS_ANONYMITY : String
+            {static} + IS_SATISFACTION : String
+            {static} + KEYWORD : String
+            {static} + LABEL_IDS : String
+            {static} + LATITUDE : String
+            {static} + LONGITUDE : String
+            {static} + MACADRESS : String
+            {static} + MOBILE : String
+            {static} + MODE_STATUS : String
+            {static} + MSG_ID : String
+            {static} + NAMING : String
+            {static} + NETWORK : String
+            {static} + NICKNAME : String
+            {static} + OPENID : String
+            {static} + OPEN_ID : String
+            {static} + OPEN_STATUS : String
+            {static} + ORDER_COMMENT : String
+            {static} + ORDER_END_DATE : String
+            {static} + ORDER_END_TIME : String
+            {static} + ORDER_ID : String
+            {static} + ORDER_START_DATE : String
+            {static} + ORDER_START_TIME : String
+            {static} + OSNAME : String
+            {static} + PAGE_SIZE : String
+            {static} + PAY_AMOUNT : String
+            {static} + PAY_TYPE : String
+            {static} + PF : String
+            {static} + PLATFORM_VALUE : String
+            {static} + PRESENTER_UID : String
+            {static} + PUBLISHER_POSITION_INDEX : String
+            {static} + PUSH_ID : String
+            {static} + PWD : String
+            {static} + QQ_TOKEN : String
+            {static} + QUANTITY : String
+            {static} + RANK_CATEGORY : String
+            {static} + RANK_TYPE : String
+            {static} + REALNAME : String
+            {static} + RECOMMEND_INDEX : String
+            {static} + REFUND_COMMENT : String
+            {static} + REFUND_REASON_ID : String
+            {static} + REFUND_TYPE_ID : String
+            {static} + REGISTER_ID : String
+            {static} + REPORT_CONTENT : String
+            {static} + REPORT_IMAGE : String
+            {static} + REPORT_TYPE : String
+            {static} + RETURN_URL : String
+            {static} + ROOM_FLEET_ID : String
+            {static} + ROOM_GAME_ID : String
+            {static} + ROOM_GAME_NAME : String
+            {static} + ROOM_ID : String
+            {static} + SEARCH_TYPE : String
+            {static} + SEX : String
+            {static} + SKILL_AUDIO_DESC : String
+            {static} + SKILL_ID : String
+            {static} + SKILL_LEVEL : String
+            {static} + SKILL_NUM : String
+            {static} + SKILL_QUALIFICATIONS_ICON : String
+            {static} + SKILL_TEXT_DESC : String
+            {static} + SOURCE : String
+            {static} + SOURCE_TYPE : String
+            {static} + TARGET_USER_ID : String
+            {static} + TASKID : String
+            {static} + THIRD_CODE : String
+            {static} + TICKET : String
+            {static} + TIMESTAMP : String
+            {static} + TOKEN : String
+            {static} + TRANSFER_AMOUNT : String
+            {static} + TRANSFER_TYPE : String
+            {static} + TUTOR_ID : String
+            {static} + TYPE : String
+            {static} + UNIONID : String
+            {static} + UNION_ID : String
+            {static} + USERAGENT : String
+            {static} + USERID : String
+            {static} + USER_BIRTHDAY : String
+            {static} + USER_EXT : String
+            {static} + USER_HOME_TOWN : String
+            {static} + USER_ICON : String
+            {static} + USER_IDENTITY_CARD : String
+            {static} + USER_MOBILE : String
+            {static} + USER_PROFESSION : String
+            {static} + USER_QQ : String
+            {static} + USER_SCHOOL : String
+            {static} + USER_SEX : String
+            {static} + USER_SIGN : String
+            {static} + USER_WX : String
+            {static} + VALIDATECODE : String
+            {static} + VALIDATE_CODE : String
+            {static} + VALIDATE_CODE_SOURCE : String
+            {static} + VERSION : String
+            {static} + VERSIONCODE : String
+            {static} + VERSIONNAME : String
+            {static} + VOICES : String
+            {static} + VOICE_POSITION_INDEX : String
+            {static} + YOUNG_MODE_SAFETY_CODE : String
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace consts {
+        class com.zaozhuang.newborn.consts.Global {
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace consts {
+        interface com.zaozhuang.newborn.consts.JumperParam {
+            {static} + ALL : String
+            {static} + APPLY_JOIN : int
+            {static} + BABY_SERIAL : String
+            {static} + BALANCE_STR : String
+            {static} + CATEGORY_ID : String
+            {static} + CATEGORY_NAME : String
+            {static} + CHART_INDEX : String
+            {static} + CHAT_ID : String
+            {static} + CLOSE : int
+            {static} + COME_SOURCE : String
+            {static} + DATA : String
+            {static} + DEPART_TIME : String
+            {static} + DIAMOND_STR : String
+            {static} + ECHO_VALUE : String
+            {static} + FEED_ID : String
+            {static} + FLAG_CANCELLATION : String
+            {static} + FLAG_SAY_HI : String
+            {static} + FLEET_DATA : String
+            {static} + GAME_ID : String
+            {static} + GAME_ROOM_ID : String
+            {static} + HOME : int
+            {static} + HOME_PAGE : int
+            {static} + INDEX : String
+            {static} + INFO : String
+            {static} + INVITECODE : String
+            {static} + LEADER : String
+            {static} + LOGIN : int
+            {static} + LOGIN_STATUS : String
+            {static} + MESSAGE : int
+            {static} + MILEAGE : String
+            {static} + MINE : int
+            {static} + NEED_HEAD : String
+            {static} + ORDER_ID : String
+            {static} + PHONE : String
+            {static} + POSITION : String
+            {static} + REAL_NAME : String
+            {static} + REASON : String
+            {static} + REMARKS : String
+            {static} + REPORT_TYPE : String
+            {static} + ROOM_CHANNEL_CODE : String
+            {static} + ROOM_ID : String
+            {static} + SCHEME_TYPE : String
+            {static} + SECURITY : String
+            {static} + SHARP_TURN : String
+            {static} + SHOW_INVITATION : String
+            {static} + SIGN_URL : String
+            {static} + SKILL_DATA : String
+            {static} + SOURCE : String
+            {static} + SPEED_UP : String
+            {static} + START_DATA : String
+            {static} + TARGET_ID : String
+            {static} + TASK_VALUE : String
+            {static} + TIMESTAMP : String
+            {static} + USER_DATA : String
+            {static} + USER_ID : String
+            {static} + USER_IDENTITY_CARD : String
+            {static} + USER_SIGN : String
+            {static} + VIDEO_PATH : String
+            {static} + VIDEO_TITLE : String
+            {static} + VIDEO_URL : String
+            {static} + VIOLATIONS : String
+            {static} + VOICE : int
+            {static} + VOICE_RICH : int
+            {static} + WALLET_TOP_UP : int
+            {static} + WEB_CHANNEL : String
+            {static} + WEB_PARAMS : String
+            {static} + WEB_TITLE : String
+            {static} + WEB_URL : String
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace consts {
+        interface com.zaozhuang.newborn.consts.JumperResult {
+            {static} + REQUEST_CODE_AVATAR : int
+            {static} + REQUEST_CODE_COLUMN : int
+            {static} + REQUEST_CODE_GALLEY : int
+            {static} + REQUEST_CODE_TAILORING : int
+            {static} + REQUEST_CODE_VIDEO : int
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

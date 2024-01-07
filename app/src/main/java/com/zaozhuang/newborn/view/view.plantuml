@@ -1,0 +1,178 @@
+@startuml
+
+title __VIEW's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace view {
+        class com.zaozhuang.newborn.view.HorizontalScrollViewEx {
+            {static} - TAG : String
+            - mChildIndex : int
+            - mChildWidth : int
+            - mChildrenSize : int
+            - mLastX : int
+            - mLastXIntercept : int
+            - mLastY : int
+            - mLastYIntercept : int
+            - mScroller : Scroller
+            - mVelocityTracker : VelocityTracker
+            + HorizontalScrollViewEx()
+            + HorizontalScrollViewEx()
+            + HorizontalScrollViewEx()
+            + computeScroll()
+            + dispatchTouchEvent()
+            + onInterceptTouchEvent()
+            + onTouchEvent()
+            # onDetachedFromWindow()
+            # onLayout()
+            # onMeasure()
+            - init()
+            - smoothScrollBy()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace view {
+        class com.zaozhuang.newborn.view.MyLayout {
+            + MyLayout()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace view {
+        class com.zaozhuang.newborn.view.PagerSlidingTabStrip {
+            + mDelegatePageListener : OnPageChangeListener
+            + mTabsContainer : LinearLayout
+            - mCurrentPosition : int
+            - mCurrentPositionOffset : float
+            - mDefaultTabLayoutParams : LayoutParams
+            - mDividerColor : int
+            - mDividerHeight : int
+            - mDividerTabLayoutParams : LayoutParams
+            - mDividerWidth : int
+            - mEmptyPosition : int
+            - mExpandedTabLayoutParams : LayoutParams
+            - mGlobalLayoutListener : OnGlobalLayoutListener
+            - mIndicatorColor : int
+            - mIndicatorDrawable : Drawable
+            - mIndicatorHeight : int
+            - mIndicatorMarginBottom : int
+            - mIndicatorPadding : int
+            - mIndicatorWidth : int
+            - mLastScrollX : int
+            - mLeftInterpolator : Interpolator
+            - mPaddingLeft : int
+            - mPaddingRight : int
+            - mRectPaint : Paint
+            - mRightInterpolator : Interpolator
+            - mScrollOffset : int
+            - mShouldExpand : boolean
+            - mTabCount : int
+            - mTabPadding : int
+            - mTabSelectedTextColor : int
+            - mTabSelectedTextStyle : int
+            - mTabTextColor : int
+            - mTabTextSelectSize : float
+            - mTabTextSize : float
+            - mTabTextStyle : int
+            - mTextColorGradient : boolean
+            - mUnderlineColor : int
+            - mUnderlineHeight : int
+            - mViewPager : ViewPager
+            + PagerSlidingTabStrip()
+            + PagerSlidingTabStrip()
+            + getTabView()
+            + notifyDataSetChanged()
+            + setEmptyPosition()
+            + setIndicatorDrawable()
+            + setLeftInterpolator()
+            + setOnPageChangeListener()
+            + setRightInterpolator()
+            + setSelectedTextStyle()
+            + setTabClickListener()
+            + setTabSelectedTextColor()
+            + setViewPager()
+            # onDraw()
+            - addTabView()
+            - addTextTabView()
+            - drawIndicator()
+            - drawUnderline()
+            - getLineLeft()
+            - getLineRight()
+            - hasDivider()
+            - isLastTab()
+            - makeDividerView()
+            - scrollToChild()
+            - setTabStyle()
+            - updateTabStyle()
+            - updateTabStyles()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace view {
+        abstract class com.zaozhuang.newborn.view.PagerSlidingTabStrip.OnPageSelectedListener {
+            + onPageScrollStateChanged()
+            + onPageScrolled()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace view {
+        class com.zaozhuang.newborn.view.PagerSlidingTabStrip.PageListener {
+            + onPageScrollStateChanged()
+            + onPageScrolled()
+            + onPageSelected()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace view {
+        interface com.zaozhuang.newborn.view.PagerSlidingTabStrip.TabViewProvider {
+            {abstract} + getTabView()
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.view.HorizontalScrollViewEx -up-|> android.view.ViewGroup
+  com.zaozhuang.newborn.view.MyLayout -up-|> android.widget.LinearLayout
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip -up-|> android.widget.HorizontalScrollView
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip o-- com.zaozhuang.newborn.listener.TabClickListener : mTabClickListener
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip o-- com.zaozhuang.newborn.view.PagerSlidingTabStrip.PageListener : mPageListener
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip +-down- com.zaozhuang.newborn.view.PagerSlidingTabStrip.OnPageSelectedListener
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip +-down- com.zaozhuang.newborn.view.PagerSlidingTabStrip.PageListener
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip +-down- com.zaozhuang.newborn.view.PagerSlidingTabStrip.TabViewProvider
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip.OnPageSelectedListener .up.|> androidx.viewpager.widget.ViewPager.OnPageChangeListener
+  com.zaozhuang.newborn.view.PagerSlidingTabStrip.PageListener .up.|> androidx.viewpager.widget.ViewPager.OnPageChangeListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

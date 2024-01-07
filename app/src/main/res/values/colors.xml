@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="default_background_color">#FFFFFF</color>
+    <color name="default_status_bar_color">#00000000</color>
+    <color name="refresh_footer_text_color">#80000000</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="main_tab_sel">@color/primary_color_girl</color>
+    <color name="main_tab_nor">#2c2c2c</color>
+    <color name="primary_color2">#333333</color>
+    <color name="primary_color_girl">#FD8094</color>
+    <color name="primary_color_boy">#5992F7</color>
+
+    <color name="hint_color">#CFCFCF</color>
+
+    <color name="switch_color">#1BC787</color>
+
+    <color name="date_color">#9B9B9B</color>
+
+    <color name="gps_color">#B5B5B5</color>
+    <color name="color_rankCategoryUnselected">#80FFFFFF</color>
+
+    <!--main_activity-->
+    <color name="des_color">#666666</color>
+    <color name="get_code_phone_color">@color/primary_color_girl</color>
+
+    <color name="text_color">#232323</color>
+    <color name="grey_998F9A">#998F9A</color>
+    <color name="black_373737">#373737</color>
+    <color name="login_code_text_color">#535353</color>
+    <color name="bottom_bar_text_color">#232323</color>
+    <color name="bottom_bar_un_text_color">#232323</color>
+    <color name="bg_color">#F7F7F7</color>
+
+    <color name="difference_color">#F95E59</color>
+    <color name="new_v_text_color">#FF005B</color>
+    <color name="new_bg_color">#242633</color>
+    <color name="new_fragment_me_color">#FF9346</color>
+    <color name="exchange_success_text_color">#9A7E48</color>
+    <color name="exchange_success_vip_text_color">#A08049</color>
+    <!-- 通用字体颜色   -->
+    <color name="white_34">#57ffffff</color>
+    <color name="white_85">#D9ffffff</color>
+    <color name="white_45">#73ffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_30">#4dffffff</color>
+    <color name="white_90">#e5ffffff</color>
+    <color name="white_80">#ccffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_65">#A6ffffff</color>
+
+    <color name="des_text_color">#C4C4C4</color>
+    <color name="color_00CBBC">#00CBBC</color>
+    <color name="color_FF9395">#FF9395</color>
+    <color name="wallet_text_color_17">#2B00A69A</color>
+    <color name="new_line_color">#EFEFEF</color>
+    <color name="line_color">#eeeeee</color>
+    <color name="button_cancel">#9B9FA3</color>
+    <color name="edit_hint_color">#C4C4C4</color>
+
+    <color name="history_tag_color">#1AC4C4C4</color>
+
+    <color name="colorLineMain">#1A000000</color>
+
+
+    <color name="button_ok">#6AD7D4</color>
+    <color name="chat_recevice_color">#323232</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_93949B">#93949B</color>
+
+
+    <color name="black_30">#4d000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_5">#0D000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#66000000</color>
+
+    <color name="color_EEF2FD_80">#CCEEF2FD</color>
+
+    <color name="green_32BDE1">#32BDE1</color>
+    <color name="fous_color">#6AD7D4</color>
+    <color name="fous_color_50">#808CF2CA</color>
+    <color name="edit_info_bg">@color/bg_color</color>
+    <color name="edit_content_color">#33232323</color>
+    <color name="place_order_color">#8B919F</color>
+    <color name="price_color">#EB6964</color>
+
+    <color name="text_color_50">#80232323</color>
+    <color name="text_color_60">#99232323</color>
+    <color name="text_color_30">#4D232323</color>
+    <color name="text_color_20">#33232323</color>
+    <color name="pickview_line_color">#EEEEEF</color>
+    <color name="color_8CF2CA_10">#1A8CF2CA</color>
+    <color name="color_8CF2CA_20">#338CF2CA</color>
+    <color name="color_8CF2CA_60">#998CF2CA</color>
+    <color name="color_33FFFFFF">#33FFFFFF</color>
+
+
+    <color name="slide_tab_select_color">#111111</color>
+    <color name="slide_tab_un_select_color">#80111111</color>
+    <color name="slide_tab_un_select_color1">#C4C5C5</color>
+    <color name="slide_tab_un_select_color2">#9E9CAE</color>
+
+    <color name="home_column_sex_color">#5992F7</color>
+    <color name="home_column_sex_un_color">#111111</color>
+    <color name="color_00B489_10">#1A00B489</color>
+    <color name="color_00B489_80">#CC8CF2CA</color>
+    <color name="color_4EACF8_80">#CC4EACF8</color>
+
+    <color name="color_111111">#111111</color>
+    <color name="color_c7c7c7">#C7C7C7</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_6ad7d4">#6AD7D4</color>
+    <color name="color_6ad7d4_10">#2A6AD7D4</color>
+    <color name="color_f4f4f4">#F4F4F4</color>
+    <color name="color_e3fff4">#E3FFF4</color>
+    <color name="color_eb6b65">#EB6B65</color>
+    <color name="color_45fcef">#45FCEF</color>
+    <color name="color_46fdef">#46FDEF</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_f7f7f7">#F7F7F7</color>
+    <color name="color_4CA8F7">#4CA8F7</color>
+    <color name="color_8CF2CA">#8CF2CA</color>
+    <color name="color_ffffdc">#FFFFDC</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_c9c9c9">#c9c9c9</color>
+    <color name="color_4D000000">#4D000000</color>
+    <color name="color_bg_rank_list">#12042F</color>
+    <color name="color_fefefe">#FEFEFE</color>
+    <color name="color_ff5588">#FF5588</color>
+
+    // v1.3.0 修改标签颜色值
+    <color name="color_53C1FF">#53C1FF</color>
+    <color name="color_FF70CE">#FF70CE</color>
+    <color name="color_FF6C6C">#FF6C6C</color>
+    <color name="color_FF9D42">#FF9D42</color>
+
+    <color name="wallet_text_color">#00A69A</color>
+    <color name="goods_price_color">#F43C43</color>
+    <color name="circle_color">#0D0077FF</color>
+
+    <color name="c_ffffff">#ffffff</color>
+
+    <color name="txt_black_light">#333333</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_blue">#58ACED</color>
+    <color name="text_yellow">#FFC800</color>
+
+    <color name="huangdan_high">#EF0000</color>
+    <color name="huangdan_middle">#FFBD00</color>
+    <color name="huangdan_low">#FFFF00</color>
+
+</resources>

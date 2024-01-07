@@ -1,0 +1,268 @@
+@startuml
+
+title __ADAPTER's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.BabyItemAdapter {
+            - context : Context
+            - list : List<Baby>
+            + BabyItemAdapter()
+            + getItemCount()
+            + onBindViewHolder()
+            + onCreateViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        interface com.zaozhuang.newborn.adapter.BabyItemAdapter.OnItemClickListener {
+            {abstract} + onItemClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.BabyItemAdapter.ViewHolder {
+            - iv_head : ImageView
+            - ll_baby : LinearLayout
+            - tv_birthday : TextView
+            - tv_key : TextView
+            + ViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.BleScanViewAdapter {
+            ~ itemData : List<SearchResult>
+            - mLayoutInflater : LayoutInflater
+            + BleScanViewAdapter()
+            + getItemCount()
+            + onBindViewHolder()
+            + onCreateViewHolder()
+            + setBleItemOnclick()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.BleScanViewAdapter.NormalTextViewHolder {
+            ~ mBleRssi : TextView
+            ~ NormalTextViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.HeightInputAdapter {
+            - flag : int
+            - list : List<InputEntity>
+            + HeightInputAdapter()
+            + getItemCount()
+            + onBindViewHolder()
+            + onCreateViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.HeightInputAdapter.ViewHolder {
+            - numTxt : EditText
+            - tv_key : TextView
+            + ViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        interface com.zaozhuang.newborn.adapter.OnRecycleViewClickCallback {
+            {abstract} + OnRecycleViewClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.SimpleTabAdapter {
+            - fm : FragmentManager
+            - fragments : List<Fragment>
+            - titles : List<String>
+            + SimpleTabAdapter()
+            + addFragment()
+            + addFragment()
+            + destroyItem()
+            + getCount()
+            + getItem()
+            + getPageTitle()
+            + instantiateItem()
+            + remove()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.TransmitAdapter {
+            - list : List<InputEntity>
+            + TransmitAdapter()
+            + getItemCount()
+            + onBindViewHolder()
+            + onCreateViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.TransmitAdapter.ViewHolder {
+            - ll_key : LinearLayout
+            - tv_key : TextView
+            + ViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.VideoItemAdapter {
+            - context : Context
+            - list : List<InputEntity>
+            + VideoItemAdapter()
+            + getItemCount()
+            + onBindViewHolder()
+            + onCreateViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        interface com.zaozhuang.newborn.adapter.VideoItemAdapter.OnItemClickListener {
+            {abstract} + onItemClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.VideoItemAdapter.ViewHolder {
+            - rl_item : RelativeLayout
+            - tv_key : TextView
+            + ViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.XinlvAdapter {
+            - flag : int
+            - list : List<InputEntity>
+            + XinlvAdapter()
+            + getItemCount()
+            + onBindViewHolder()
+            + onCreateViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace adapter {
+        class com.zaozhuang.newborn.adapter.XinlvAdapter.ViewHolder {
+            - tv_key : TextView
+            - tv_value : TextView
+            + ViewHolder()
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.adapter.BabyItemAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.zaozhuang.newborn.adapter.BabyItemAdapter o-- com.zaozhuang.newborn.adapter.BabyItemAdapter.OnItemClickListener : listener
+  com.zaozhuang.newborn.adapter.BabyItemAdapter +-down- com.zaozhuang.newborn.adapter.BabyItemAdapter.OnItemClickListener
+  com.zaozhuang.newborn.adapter.BabyItemAdapter +-down- com.zaozhuang.newborn.adapter.BabyItemAdapter.ViewHolder
+  com.zaozhuang.newborn.adapter.BabyItemAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.zaozhuang.newborn.adapter.BleScanViewAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.zaozhuang.newborn.adapter.BleScanViewAdapter o-- com.zaozhuang.newborn.adapter.OnRecycleViewClickCallback : mBleCallback
+  com.zaozhuang.newborn.adapter.BleScanViewAdapter +-down- com.zaozhuang.newborn.adapter.BleScanViewAdapter.NormalTextViewHolder
+  com.zaozhuang.newborn.adapter.BleScanViewAdapter.NormalTextViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.zaozhuang.newborn.adapter.HeightInputAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.zaozhuang.newborn.adapter.HeightInputAdapter +-down- com.zaozhuang.newborn.adapter.HeightInputAdapter.ViewHolder
+  com.zaozhuang.newborn.adapter.HeightInputAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.zaozhuang.newborn.adapter.SimpleTabAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+  com.zaozhuang.newborn.adapter.TransmitAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.zaozhuang.newborn.adapter.TransmitAdapter +-down- com.zaozhuang.newborn.adapter.TransmitAdapter.ViewHolder
+  com.zaozhuang.newborn.adapter.TransmitAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.zaozhuang.newborn.adapter.VideoItemAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.zaozhuang.newborn.adapter.VideoItemAdapter o-- com.zaozhuang.newborn.adapter.VideoItemAdapter.OnItemClickListener : listener
+  com.zaozhuang.newborn.adapter.VideoItemAdapter +-down- com.zaozhuang.newborn.adapter.VideoItemAdapter.OnItemClickListener
+  com.zaozhuang.newborn.adapter.VideoItemAdapter +-down- com.zaozhuang.newborn.adapter.VideoItemAdapter.ViewHolder
+  com.zaozhuang.newborn.adapter.VideoItemAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.zaozhuang.newborn.adapter.XinlvAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.zaozhuang.newborn.adapter.XinlvAdapter +-down- com.zaozhuang.newborn.adapter.XinlvAdapter.ViewHolder
+  com.zaozhuang.newborn.adapter.XinlvAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

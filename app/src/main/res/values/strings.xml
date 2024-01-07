@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">枣庄市新生儿网格化医疗服务</string>
+
+
+    <!-- refresh -->
+    <string name="refresh_footer_gone">加载更多</string>
+    <string name="refresh_footer_loading">加载中...</string>
+    <string name="refresh_footer_end">我是有底线的</string>
+    <string name="refresh_footer_error">出错了，点击重试!</string>
+    <string name="main_tab_message">消息</string>
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_map">地图</string>
+    <string name="main_tab_entertainmentLayout">大厅</string>
+    <string name="main_tab_dynamic">动态</string>
+    <string name="main_tab_me">我的</string>
+
+    <string name="exception_no_max_length">editText not set maxLength? go home you are drunk</string>
+
+    <string name="social_contract">收起</string>
+    <string name="social_expend">展开</string>
+    <string name="social_text_target">网页链接</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="room_rule">房间守则\t\n聊天中请保持文明用语，低俗、色情、政治敏感、广告等不良聊天内容将会被严厉处理！</string>
+    <string name="please_voice">申请上麦</string>
+    <string name="leader_list">队长榜</string>
+    <string name="contribution_list">贡献榜</string>
+    <string name="charm_list">魅力榜</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_hint">搜索ID、 聊天室</string>
+    <string name="title_lucky_list">幸运榜</string>
+    <string name="title_jinli_list">锦鲤榜</string>
+    <!--邀请- v1.5.0-->
+    <string name="invitation_list">我的邀请</string>
+    <string name="invitation">邀请</string>
+
+    <string name="content_account_cancellation">如需注销账户，请发送\"注销账户\"，人工审核将在15个工作日内完成审核和处理。</string>
+    <string name="phone_num">手机号码</string>
+    <string name="login_other_text">— 其它登录方式 —</string>
+    <string name="phone_num_hint">请在这里输入手机号码</string>
+    <string name="baby_add_name">请输入宝宝的名字</string>
+    <string name="register_phone_hint">请在这里输入手机号</string>
+    <string name="register_name_hint">请在这里输入用户名</string>
+    <string name="register_pwd_hint">请在这里输入密码</string>
+    <string name="get_verify_code">获取短信验证码</string>
+    <string name="read_confirm">已阅读并同意</string>
+    <string name="read_confirm_my">我已阅读并同意</string>
+    <string name="service_rule">《用户协议》</string>
+    <string name="privacy_rule">《隐私协议》</string>
+    <string name="privacy_rule_leva_manito">《开车吧OpenCar大神协议》</string>
+    <string name="privacy_rule_gongmao">《自由职业者服务协议》</string>
+    <string name="jg_channel_name_p_min">LOW</string>
+    <string name="jg_channel_name_p_low">LOW</string>
+    <string name="jg_channel_name_p_default">NORMAL</string>
+    <string name="jg_channel_name_p_high">HIGH</string>
+    <string name="no_text">暂时不可发消息，需充值达到骑士即可发送。</string>
+
+
+    <string name="me_ticket_goods">帮票商城</string>
+
+
+    <string name="main_top_title">SudMGP</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="enter">进入</string>
+</resources>

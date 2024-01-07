@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginHorizontal="@dimen/margin_left"
+        android:layout_marginTop="69px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="手机号"
+                android:textColor="@color/text_color"
+                android:textSize="46px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="49px"
+                android:layout_marginHorizontal="37px"
+                android:background="@color/line_color" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/register_phone_hint"
+                android:inputType="number"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/edit_hint_color"
+                android:textCursorDrawable="@drawable/common_cursor"
+                android:textSize="43px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/clear_image"
+            android:layout_width="100px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20px"
+            android:src="@mipmap/edit_clear_icon"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginHorizontal="@dimen/margin_left"
+        android:layout_marginTop="69px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="用户名"
+                android:textColor="@color/text_color"
+                android:textSize="46px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="49px"
+                android:layout_marginHorizontal="37px"
+                android:background="@color/line_color" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/register_name_hint"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/edit_hint_color"
+                android:textCursorDrawable="@drawable/common_cursor"
+                android:textSize="43px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/clear_image"
+            android:layout_width="100px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20px"
+            android:src="@mipmap/edit_clear_icon"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginHorizontal="@dimen/margin_left"
+        android:layout_marginTop="69px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="密码    "
+                android:textColor="@color/text_color"
+                android:textSize="46px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="49px"
+                android:layout_marginHorizontal="37px"
+                android:background="@color/line_color" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/register_pwd_hint"
+                android:inputType="number"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/edit_hint_color"
+                android:textCursorDrawable="@drawable/common_cursor"
+                android:textSize="43px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/clear_image2"
+            android:layout_width="100px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20px"
+            android:src="@mipmap/edit_clear_icon"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_color" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_done"
+        android:layout_width="576px"
+        android:layout_height="121px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="288px"
+        android:background="@drawable/bg_btn_main_girl"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="37px" />
+
+
+</LinearLayout>

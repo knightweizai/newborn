@@ -1,0 +1,167 @@
+@startuml
+
+title __BLUETOOTH's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace bluetooth {
+        class com.zaozhuang.newborn.bluetooth.DeviceCompare {
+            + compare()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace bluetooth {
+        interface com.zaozhuang.newborn.bluetooth.Oprate {
+            {static} + AIM_SPROT_CALC : String
+            {static} + ALARM_NEW_ADD : String
+            {static} + ALARM_NEW_DELETE : String
+            {static} + ALARM_NEW_LISTENER : String
+            {static} + ALARM_NEW_MODIFY : String
+            {static} + ALARM_NEW_READ : String
+            {static} + ALARM_READ : String
+            {static} + ALARM_SETTING : String
+            {static} + BATTERY : String
+            {static} + BP_DETECTMODEL_READ : String
+            {static} + BP_DETECTMODEL_SETTING : String
+            {static} + BP_DETECTMODEL_SETTING_ADJUSTE : String
+            {static} + BP_DETECTMODEL_SETTING_ADJUSTE_CANCEL : String
+            {static} + BP_DETECT_START : String
+            {static} + BP_DETECT_STOP : String
+            {static} + BP_FUNCTION_READ : String
+            {static} + BP_FUNCTION_SETTING : String
+            {static} + CAMERA_START : String
+            {static} + CAMERA_STOP : String
+            {static} + CHECK_WEAR_SETING_CLOSE : String
+            {static} + CHECK_WEAR_SETING_OPEN : String
+            {static} + CLEAR_DEVICE_DATA : String
+            {static} + COUNT_DOWN_APP : String
+            {static} + COUNT_DOWN_APP_READ : String
+            {static} + COUNT_DOWN_WATCH_CLOSE_UI : String
+            {static} + COUNT_DOWN_WATCH_OPEN_UI : String
+            {static} + DETECT_PTT : String
+            {static} + DETECT_START_ECG : String
+            {static} + DETECT_STOP_ECG : String
+            {static} + DEVICE_CONTROL_PHONE : String
+            {static} + DEVICE_COUSTOM_READ : String
+            {static} + DEVICE_COUSTOM_SETTING : String
+            {static} + DEVICE_ECG_ALWAYS_CLOSE : String
+            {static} + DEVICE_ECG_ALWAYS_OPEN : String
+            {static} + DISCONNECT : String
+            {static} + ECG_AUTO_REPORT_TEXT : String
+            {static} + FATIGUE_CLOSE : String
+            {static} + FATIGUE_OPEN : String
+            {static} + FINDDEVICE_READ : String
+            {static} + FINDDEVICE_SETTING_CLOSE : String
+            {static} + FINDDEVICE_SETTING_OPEN : String
+            {static} + FINDPHONE : String
+            {static} + G15_QR_CODE : String
+            {static} + GPS_KAABA : String
+            {static} + GPS_REPORT_START : String
+            {static} + HEARTWRING_CLOSE : String
+            {static} + HEARTWRING_OPEN : String
+            {static} + HEARTWRING_READ : String
+            {static} + HEART_DETECT_START : String
+            {static} + HEART_DETECT_STOP : String
+            {static} + HRV_ORIGIN_READ : String
+            {static} + INSTITUTION_TRANSLATION : String
+            {static} + LANGUAGE_CHINESE : String
+            {static} + LANGUAGE_ENGLISH : String
+            {static} + LIANSUO_SEND_CONTENT : String
+            {static} + LIANSUO_SEND_ORDER : String
+            {static} + LIANSUO_SOS : String
+            {static} + LONGSEAT_READ : String
+            {static} + LONGSEAT_SETTING_CLOSE : String
+            {static} + LONGSEAT_SETTING_OPEN : String
+            {static} + LOW_POWER_CLOSE : String
+            {static} + LOW_POWER_OPEN : String
+            {static} + LOW_POWER_READ : String
+            {static} + NIGHT_TURN_WRIST_CLOSE : String
+            {static} + NIGHT_TURN_WRIST_CUSTOM_TIME : String
+            {static} + NIGHT_TURN_WRIST_CUSTOM_TIME_LEVEL : String
+            {static} + NIGHT_TURN_WRIST_OPEN : String
+            {static} + NIGHT_TURN_WRIST_READ : String
+            {static} + NONE : String
+            {static} + OAD : String
+            {static} + ORIGIN_LOG : String
+            {static} + PERSONINFO_SYNC : String
+            {static} + PWD_COMFIRM : String
+            {static} + PWD_MODIFY : String
+            {static} + READ_CHANTING : String
+            {static} + READ_HEALTH : String
+            {static} + READ_HEALTH_DRINK : String
+            {static} + READ_HEALTH_ORIGINAL : String
+            {static} + READ_HEALTH_ORIGINAL_FROM : String
+            {static} + READ_HEALTH_ORIGINAL_SINGLEDAY : String
+            {static} + READ_HEALTH_SLEEP : String
+            {static} + READ_HEALTH_SLEEP_FROM : String
+            {static} + READ_HEALTH_SLEEP_SINGLEDAY : String
+            {static} + READ_TEMPTURE_DATA : String
+            {static} + RR : String
+            {static} + S22_READ_DATA : String
+            {static} + S22_READ_STATE : String
+            {static} + S22_SETTING_STATE_CLOSE : String
+            {static} + S22_SETTING_STATE_OPEN : String
+            {static} + SCREEN_LIGHT_READ : String
+            {static} + SCREEN_LIGHT_SETTING : String
+            {static} + SCREEN_STYLE_READ : String
+            {static} + SCREEN_STYLE_SETTING : String
+            {static} + SETTING_FIRST : String
+            {static} + SET_WATCH_TIME : String
+            {static} + SHOW_SP : String
+            {static} + SOCIAL_MSG_READ : String
+            {static} + SOCIAL_MSG_SEND : String
+            {static} + SOCIAL_MSG_SETTING : String
+            {static} + SOCIAL_MSG_SETTING2 : String
+            {static} + SOCIAL_PHONE_IDLE_OR_OFFHOOK : String
+            {static} + SPO2H_AUTO_DETECT_CLOSE : String
+            {static} + SPO2H_AUTO_DETECT_OPEN : String
+            {static} + SPO2H_AUTO_DETECT_READ : String
+            {static} + SPO2H_CLOSE : String
+            {static} + SPO2H_OPEN : String
+            {static} + SPO2H_ORIGIN_READ : String
+            {static} + SPORT_CURRENT_READ : String
+            {static} + SPORT_MODE_ORIGIN_END : String
+            {static} + SPORT_MODE_ORIGIN_READ : String
+            {static} + SPORT_MODE_ORIGIN_READSTAUTS : String
+            {static} + SPORT_MODE_ORIGIN_START : String
+            {static} + SPORT_MODE_START_INDOOR : String
+            {static} + SYNC_MUSIC_INFO : String
+            {static} + TEMPTURE_DETECT_START : String
+            {static} + TEMPTURE_DETECT_STOP : String
+            {static} + TEXT_ALARM : String
+            {static} + TEXT_ALARM_ADD : String
+            {static} + TEXT_ALARM_DELETE : String
+            {static} + TEXT_ALARM_MODIFY : String
+            {static} + TEXT_ALARM_READ : String
+            {static} + UI_UPDATE_AGPS : String
+            {static} + UI_UPDATE_CUSTOM : String
+            {static} + UI_UPDATE_G15IMG : String
+            {static} + UI_UPDATE_SERVER : String
+            {static} + WEATHER_READ_STATUEINFO : String
+            {static} + WEATHER_SETTING_DATA : String
+            {static} + WEATHER_SETTING_STATUEINFO : String
+            {static} + WOMEN_READ : String
+            {static} + WOMEN_SETTING : String
+            {static} + oprateStr : String[]
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.bluetooth.DeviceCompare .up.|> java.util.Comparator
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

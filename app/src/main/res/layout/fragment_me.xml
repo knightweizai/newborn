@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_register"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/primary_color_girl">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="43px"
+            android:textColor="@color/white"
+            android:text="登录/注册"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_add_baby"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="43px"
+        android:layout_height="150px">
+
+        <TextView
+            android:id="@+id/setting_name_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:text="添加宝宝"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/setting_adapter_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blue_connect"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="43px"
+        android:layout_height="150px">
+
+        <TextView
+            android:id="@+id/setting_name_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:text="手环连接"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/setting_adapter_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sliding"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="43px"
+        android:layout_height="150px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:text="仿人人滑动菜单"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/setting_adapter_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_volley_test"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="43px"
+        android:layout_height="150px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:text="volleyTest"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/setting_adapter_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_transmit"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="43px"
+        android:layout_height="150px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:text="Transmit"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/setting_adapter_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_touchevent"
+        android:layout_width="match_parent"
+        android:paddingHorizontal="43px"
+        android:layout_height="150px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_color"
+            android:text="TouchEvent"
+            android:textSize="46px" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/setting_adapter_icon" />
+    </RelativeLayout>
+</LinearLayout>

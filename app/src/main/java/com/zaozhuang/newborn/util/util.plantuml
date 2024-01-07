@@ -1,0 +1,248 @@
+@startuml
+
+title __UTIL's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.ActivityUtils {
+            {static} - chatRoomIndex : int
+            {static} - chatTeamRoomIndex : int
+            {static} - mActivityStack : Stack<Activity>
+            {static} + addActivity()
+            {static} + addFragmentToActivity()
+            {static} + addFragmentToActivity()
+            {static} + chatRoom()
+            {static} + chatTeamRoom()
+            {static} + finishOtherActivities()
+            {static} + getTopActivity()
+            {static} + removeActivity()
+            {static} + removeAllActivity()
+            {static} + replaceFragmentFromActivity()
+            {static} + switchFragment()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.ClickUtils {
+            {static} - fTime : long
+            {static} - sTime : long
+            {static} + check()
+            {static} + isDoubleClick()
+            {static} + isDoubleClick()
+            {static} + isDoubleClick()
+            {static} + isDoubleClick()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.CrashHandler {
+            {static} + mDefaultHandler : UncaughtExceptionHandler
+            {static} - TAG : String
+            {static} + init()
+            + uncaughtException()
+            - CrashHandler()
+            - createCrashMessage()
+            - getCrashInfo()
+            - handleException()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.FileUtils {
+            {static} + GLOBAL_BUFFER_SIZE : int
+            {static} + assetsWriteToSDfromInput()
+            {static} + closeStream()
+            {static} + copy()
+            {static} + copy()
+            {static} + copy()
+            {static} + copy()
+            {static} + createNewFile()
+            {static} + delete()
+            {static} + delete()
+            {static} + getAppDownloadFileDir()
+            {static} + getBaseDataDir()
+            {static} + getBaseSdDir()
+            {static} + getConfigDir()
+            {static} + getCrashFileDir()
+            {static} + getFileContent()
+            {static} + getFileContent()
+            {static} + getFileInputStream()
+            {static} + getFileInputStream()
+            {static} + getFileSize()
+            {static} + getFileType()
+            {static} + getImageFilePaths()
+            {static} + getImgDir()
+            {static} + getLogDir()
+            {static} + getRecordDir()
+            {static} + getRtmImageDir()
+            {static} + getUploadImgPath()
+            {static} + getUploadUserImgDir()
+            {static} + getVoiceDir()
+            {static} + getWebViewCacheDir()
+            {static} + isFileExist()
+            {static} + isFileExist()
+            {static} + makeInputBuffered()
+            {static} + makeOutputBuffered()
+            {static} + makesureFileExist()
+            {static} + makesureFileExist()
+            {static} + makesureParentExist()
+            {static} + makesureParentExist()
+            {static} + mkdirs()
+            {static} + saveCrashLog()
+            {static} + saveFile()
+            {static} + saveLog()
+            {static} + unZipFolder()
+            {static} + writeToSDfromInput()
+            {static} + zipFile()
+            {static} - __createNewFile()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.GlideUtils {
+            {static} + getBitmap()
+            {static} + getBitmap()
+            {static} + getBitmap()
+            {static} + getCircleBitmap()
+            {static} + getDrawableGlide()
+            {static} + getDrawableGlide()
+            {static} + loadBanner()
+            {static} + loadCentInsideImage()
+            {static} + loadCircleImage()
+            {static} + loadCircleImage()
+            {static} + loadCircleImage()
+            {static} + loadCircleImage()
+            {static} + loadCornersImage()
+            {static} + loadCropImage()
+            {static} + loadImage()
+            {static} + loadImage()
+            {static} + loadImage()
+            {static} + loadImage()
+            {static} + loadImageNol()
+            {static} + loadImageNol()
+            {static} + loadImageNol()
+            {static} + loadImageNol()
+            {static} + loadImageNol()
+            {static} + loadImageNolDefault()
+            {static} + loadStaggeredImage()
+            {static} + loadVoiceBanner()
+            {static} + warpUrl()
+            {static} + warpUrlS200()
+            {static} + warpUrlS360()
+            {static} + warpUrlW1080()
+            {static} - checkContext()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        enum ImageCompressType {
+          _s200
+          _s260
+          _s360
+          _w1080
+          _w200
+          _w260
+          _w360
+          _w3600
+          _w720
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.MyLogs {
+            {static} + isDebug : boolean
+            {static} + LogError()
+            {static} + LogNormal()
+            {static} + LogSuccess()
+            {static} + d()
+            {static} + e()
+            {static} + i()
+            {static} + longE()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.ThreadUtils {
+            {static} - mSingleThreadExecutor : ExecutorService
+            {static} - threadPoolExecutor : ThreadPoolExecutor
+            {static} + getSingleThreadPoolExecutor()
+            {static} + getThreadPoolExecutor()
+            {static} + init()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace util {
+        class com.zaozhuang.newborn.util.TypefaceUtils {
+            {static} - sBoldTypeface : Typeface
+            {static} - sTypeface : Typeface
+            {static} + getTypeface()
+            {static} + getTypeface()
+            {static} + init()
+            {static} + setTextBold()
+            {static} + setTextBold()
+            {static} + setTitleTypeface()
+            {static} + setTitleTypeface()
+            {static} - getTypeface()
+            {static} - isBold()
+            {static} - isItalic()
+            {static} - setFakeBoldText()
+            {static} - setTextItalic()
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.util.CrashHandler .up.|> java.lang.Thread.UncaughtExceptionHandler
+  com.zaozhuang.newborn.util.GlideUtils +-down- com.zaozhuang.newborn.util.GlideUtils.ImageCompressType
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

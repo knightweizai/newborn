@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 添加新的样式 请按下面格式添加 -->
+
+    <!-- PagerSlidingTabStrip-->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsPaddingLeft" format="dimension" />
+        <attr name="pstsPaddingRight" format="dimension" />
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsIndicatorDrawable" format="reference" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsIndicatorWidth" format="dimension" />
+        <attr name="pstsIndicatorPadding" format="dimension" />
+        <attr name="pstsIndicatorMarginBottom" format="dimension" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsDividerHeight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTabPadding" format="dimension" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="reference" />
+        <attr name="pstsTabSelectedTextColor" format="reference" />
+        <attr name="pstsTabTextColorGradient" format="boolean" />
+        <attr name="pstsTabTextStyle" format="reference">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTabSelectedTextStyle" format="reference">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTabSelectedTextSize" format="dimension" />
+        <attr name="pstsTabWidth" format="dimension" />
+        <attr name="pstsTabHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundImageView">
+        <attr name="foreground" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="DrawableTextView">
+        <attr name="drawableWidth" format="dimension" />
+        <attr name="drawableHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LightTextView">
+        <attr name="lightTextSize" format="dimension" />
+        <attr name="lightTextColor" format="color" />
+        <attr name="lightMaxWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordText">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemSize" format="dimension" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemBorderSize" format="dimension" />
+        <attr name="itemSpaceWidth" format="dimension" />
+        <attr name="itemBorderColor" format="color" />
+        <attr name="itemBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LetterIndexBar">
+        <attr name="itemHeightL" format="dimension" />
+        <attr name="textSizeL" format="dimension" />
+        <attr name="textColorL" format="color" />
+        <attr name="selectedTextColorL" format="color" />
+        <attr name="selectedBackgroundColorL" format="color" />
+        <attr name="selectedBackgroundRadiusL" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DotView">
+        <attr name="dotCount" format="integer" />
+        <attr name="dotColor" format="color" />
+        <attr name="dotRadius" format="dimension" />
+        <attr name="dotSpaceWidth" format="dimension" />
+        <attr name="dotSpaceHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DynamicDotView">
+        <attr name="dotSelectedColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingDotView">
+        <attr name="dotDuration" format="integer" />
+        <attr name="dotMaxScale" format="float" />
+        <attr name="dotMinScale" format="float" />
+        <attr name="dotColor0" format="color" />
+        <attr name="dotColor1" format="color" />
+        <attr name="dotColor2" format="color" />
+        <attr name="dotColor3" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SingleLineAutoTextView">
+        <attr name="minTextSize" format="dimension" />
+        <attr name="maxTextSize" format="dimension" />
+        <attr name="stepGranularity" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SmallRefreshLayout">
+        <attr name="srlMaxDragRate" format="float" />
+        <attr name="srlMinDragRate" format="float" />
+        <attr name="srlMaxHeaderDragRate" format="float" />
+        <attr name="srlRefreshEnabled" format="boolean" />
+        <attr name="srlBaseDuration" format="integer" />
+        <attr name="srlRefreshedStayingDuration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerRectView">
+        <attr name="crvCornerRadius" format="dimension" />
+        <attr name="crvLineSize" format="dimension" />
+        <attr name="crvLineColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WebViewContainer">
+        <attr name="wvcMaxHeight" format="dimension" />
+        <attr name="wvcIntervalHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RedPacketProgress">
+        <attr name="rppRingInsideRadius" format="dimension" />
+        <attr name="rppRingOutsideRadius" format="dimension" />
+        <attr name="rppRingColor" format="color" />
+        <attr name="rppRingBgColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" format="dimension" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension" />
+        <attr name="captchaHeight" format="dimension" />
+        <attr name="matchDeviation" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="VerCodeEditText">
+        <attr name="vcCount" format="integer" />
+        <attr name="vcMaxLength" format="integer" />
+        <!---->
+        <attr name="vcEditBackground" format="reference" />
+        <attr name="vcNormalBackground" format="reference" />
+        <attr name="vcFocusedBackground" format="reference" />
+        <!---->
+        <attr name="vcWidth" format="dimension" />
+        <attr name="vcHeight" format="dimension" />
+        <attr name="vcMinWidth" format="dimension" />
+        <attr name="vcMinHeight" format="dimension" />
+        <!---->
+        <attr name="vcMargin" format="dimension" />
+        <attr name="vcMarginLeft" format="dimension" />
+        <attr name="vcMarginTop" format="dimension" />
+        <attr name="vcMarginRight" format="dimension" />
+        <attr name="vcMarginBottom" format="dimension" />
+        <!---->
+        <attr name="vcPadding" format="dimension" />
+        <attr name="vcPaddingLeft" format="dimension" />
+        <attr name="vcPaddingTop" format="dimension" />
+        <attr name="vcPaddingRight" format="dimension" />
+        <attr name="vcPaddingBottom" format="dimension" />
+        <!---->
+        <attr name="vcTextSize" format="dimension" />
+        <attr name="vcTextColor" format="color" />
+        <attr name="vcTextCursorDrawable" format="reference" />
+        <attr name="vcGravity" format="flags">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="vcInputType" format="flags">
+            <flag name="none" value="0x00000000" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textCapCharacters" value="0x00001001" />
+            <flag name="textCapWords" value="0x00002001" />
+            <flag name="textCapSentences" value="0x00004001" />
+            <flag name="textAutoCorrect" value="0x00008001" />
+            <flag name="textAutoComplete" value="0x00010001" />
+            <flag name="textMultiLine" value="0x00020001" />
+            <flag name="textImeMultiLine" value="0x00040001" />
+            <flag name="textNoSuggestions" value="0x00080001" />
+            <flag name="textUri" value="0x00000011" />
+            <flag name="textEmailAddress" value="0x00000021" />
+            <flag name="textEmailSubject" value="0x00000031" />
+            <flag name="textShortMessage" value="0x00000041" />
+            <flag name="textLongMessage" value="0x00000051" />
+            <flag name="textPersonName" value="0x00000061" />
+            <flag name="textPostalAddress" value="0x00000071" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="textVisiblePassword" value="0x00000091" />
+            <flag name="textWebEditText" value="0x000000a1" />
+            <flag name="textFilter" value="0x000000b1" />
+            <flag name="textPhonetic" value="0x000000c1" />
+            <flag name="textWebEmailAddress" value="0x000000d1" />
+            <flag name="textWebPassword" value="0x000000e1" />
+            <flag name="number" value="0x00000002" />
+            <flag name="numberSigned" value="0x00001002" />
+            <flag name="numberDecimal" value="0x00002002" />
+            <flag name="numberPassword" value="0x00000012" />
+            <flag name="phone" value="0x00000003" />
+            <flag name="datetime" value="0x00000004" />
+            <flag name="date" value="0x00000014" />
+            <flag name="time" value="0x00000024" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RedPacketStyle">
+        <attr name="count" format="integer" />
+        <attr name="speed" format="integer" />
+        <attr name="max_size" format="float" />
+        <attr name="min_size" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBarCircle">
+        <attr name="pbcOutlineColor" format="color" />
+        <attr name="pbcOutlineWidth" format="dimension" />
+        <attr name="pbcOAndISpaceWidth" format="dimension" />
+        <attr name="pbcOAndISpaceColor" format="color" />
+        <attr name="pbcInteriorColorCover" format="color" />
+        <attr name="pbcInteriorColorBg" format="color" />
+        <attr name="pbcIsLoop" format="boolean" />
+        <attr name="pbcProgress" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollLayout">
+        <attr name="minOffset" format="dimension" />
+        <attr name="maxOffset" format="dimension" />
+        <attr name="exitOffset" format="dimension" />
+        <attr name="mode1" format="reference">
+            <flag name="open" value="0x0" />
+            <flag name="close" value="0x1" />
+            <flag name="exit" value="0x2" />
+        </attr>
+        <attr name="allowHorizontalScroll" format="boolean" />
+        <attr name="isSupportExit" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableTextView">
+        <!--保留的行数-->
+        <attr name="ep_max_line" format="integer" />
+        <!--是否需要展开-->
+        <attr name="ep_need_expand" format="boolean" />
+        <!--是否需要收起 这个是建立在开启展开的基础上的-->
+        <attr name="ep_need_contract" format="boolean" />
+        <!--是否需要@用户 -->
+        <attr name="ep_need_mention" format="boolean" />
+        <!--是否需要对链接进行处理 -->
+        <attr name="ep_need_link" format="boolean" />
+        <!--是否需要动画-->
+        <attr name="ep_need_animation" format="boolean" />
+        <!--是否需要永远将展开或者收回放置在最后边-->
+        <attr name="ep_need_always_showright" format="boolean" />
+        <!--是否需要将连接转换成网页链接显示 默认为true-->
+        <attr name="ep_need_convert_url" format="boolean" />
+        <!--是否需要自定义规则-->
+        <attr name="ep_need_self" format="boolean" />
+        <!--收起的文案-->
+        <attr name="ep_contract_text" format="string" />
+        <!--展开的文案-->
+        <attr name="ep_expand_text" format="string" />
+        <!--展开的文字的颜色-->
+        <attr name="ep_expand_color" format="color" />
+        <!--收起的文字的颜色-->
+        <attr name="ep_contract_color" format="color" />
+        <!--在收回和展开前面添加的内容的字体颜色-->
+        <attr name="ep_end_color" format="color" />
+        <!--链接的文字的颜色-->
+        <attr name="ep_link_color" format="color" />
+        <!--@用户的文字的颜色-->
+        <attr name="ep_mention_color" format="color" />
+        <!--自定义规则的文字的颜色-->
+        <attr name="ep_self_color" format="color" />
+        <!--链接的图标-->
+        <attr name="ep_link_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RadiusCardView">
+        <!--        左上圆角大小-->
+        <attr name="rcv_topLeftRadiu" format="dimension" />
+        <!--        右上圆角大小-->
+        <attr name="rcv_topRightRadiu" format="dimension" />
+        <!--        右下圆角大小-->
+        <attr name="rcv_bottomRightRadiu" format="dimension" />
+        <!--        左下圆角大小-->
+        <attr name="rcv_bottomLeftRadiu" format="dimension" />
+    </declare-styleable>
+
+    <!-- 添加线模式 -->
+    <declare-styleable name="BasePickerView">
+        <attr name="pv_visible_item_count" format="integer" />
+        <!-- item尺寸 -->
+        <attr name="pv_item_size" format="dimension" />
+        <!-- 中间item的位置,默认为0-->
+        <attr name="pv_center_item_position" format="integer" />
+        <!-- 是否循环滚动，默认为true，开启-->
+        <attr name="pv_is_circulation" format="boolean" />
+        <!-- 不允许父组件拦截触摸事件，设置为true为不允许拦截，此时该设置才生效 -->
+        <attr name="pv_disallow_intercept_touch" format="boolean" />
+        <!-- 滚动的方向-->
+        <attr name="pv_orientation" format="string">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PickerView">
+        <!-- out min text size -->
+        <attr name="pv_out_text_size" format="dimension" />
+        <!-- center max text size -->
+        <attr name="pv_center_text_size" format="dimension" />
+        <!-- out text color -->
+        <attr name="pv_start_color" format="color" />
+        <!-- center text color -->
+        <attr name="pv_end_color" format="color" />
+        <!-- alignment -->
+        <attr name="pv_alignment" format="enum">
+            <enum name="center" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--文字描边-->
+    <declare-styleable name="StrokeTextView">
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+    </declare-styleable>
+    <!--涟漪控件属性-->
+    <declare-styleable name="mRippleView">
+        <attr name="cColor" format="color" />
+        <attr name="cSpeed" format="integer" />
+        <attr name="cDensity" format="integer" />
+        <attr name="cRadio" format="integer" />
+        <attr name="cIsFill" format="boolean" />
+        <attr name="cIsAlpha" format="boolean" />
+    </declare-styleable>
+
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr name="vcv_et_number" format="integer" />
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0" />
+            <enum name="numberPassword" value="1" />
+            <enum name="text" value="2" />
+            <enum name="textPassword" value="3" />
+        </attr>
+        <!--输入框的宽度-->
+        <attr name="vcv_et_width" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="vcv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="vcv_et_text_size" format="dimension|reference" />
+        <!--输入框背景-->
+        <attr name="vcv_et_bg" format="reference" />
+        <!--光标样式-->
+        <attr name="vcv_et_cursor" format="reference" />
+        <!--是否隐藏光标-->
+        <attr name="vcv_et_cursor_visible" format="boolean" />
+        <!--输入框间距，不输入则代表平分-->
+        <attr name="vcv_et_spacing" format="dimension|reference" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewIndicator">
+        <attr name="selectedColor" format="color|reference" />
+        <attr name="unSelectedColor" format="color|reference" />
+        <attr name="indicatorShape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+        <attr name="selectedHeight" format="dimension|reference" />
+        <attr name="selectedWidth" format="dimension|reference" />
+        <attr name="unSelectedHeight" format="dimension|reference" />
+        <attr name="unSelectedWidth" format="dimension|reference" />
+        <attr name="indicatorSpace" format="dimension|reference" />
+        <attr name="cornerRadii" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>

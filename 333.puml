@@ -1,0 +1,48 @@
+@startuml
+class com.zaozhuang.newborn.ui.activity.BabyKnowledgeActivity2 {
++ View? mBackView
++ TextView? mTitleView
++ TextView? tv
++ Int getLayoutId()
++ void initView()
+- String genData()
++ void initListener()
+}
+class com.zaozhuang.newborn.ui.activity.BabyAddActivity {
+~ View mBackView
+~ TextView mTitleView
+- ImageView imageView
+- TextView tv_done
+- TextView tv_birthday
+- TextView tv_weeks
+- EditText et_name
+- RadioButton rb0
+- String imgPath
+- RelativeLayout rl_birthday
+- RelativeLayout rl_weeks
+- Baby intentBaby
+# int getLayoutId()
+# void initView()
+# void initListener()
+- void addBaby()
+- void setBaby(Baby,String,String,int,String,String)
+- void showTimePopup(String)
++ void showWeeks()
++ void onLinkagePicked(Object,Object,Object)
+# String getTag()
+# void clear()
+# boolean isFullScreen()
+# void onCreate(Bundle)
+# void onStart()
+# void onRestart()
+# void onResume()
+# void onPause()
+# void onStop()
+# void onDestroy()
+}
+
+
+com.zaozhuang.newborn.ui.base.BaseActivity <|-- com.zaozhuang.newborn.ui.activity.BabyKnowledgeActivity2
+com.github.gzuliyujiang.wheelpicker.contract.OnLinkagePickedListener <|.. com.zaozhuang.newborn.ui.activity.BabyAddActivity
+com.zaozhuang.newborn.ui.base.BaseActivity <|-- com.zaozhuang.newborn.ui.activity.BabyAddActivity
+@enduml

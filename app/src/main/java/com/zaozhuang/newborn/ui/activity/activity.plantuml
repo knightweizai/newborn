@@ -1,0 +1,493 @@
+@startuml
+
+title __ACTIVITY's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.BabyAddActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - et_name : EditText
+            - imageView : ImageView
+            - imgPath : String
+            - rb0 : RadioButton
+            - rb1 : RadioButton
+            - rl_birthday : RelativeLayout
+            - rl_weeks : RelativeLayout
+            - tv_birthday : TextView
+            - tv_done : TextView
+            - tv_weeks : TextView
+            + onLinkagePicked()
+            + showWeeks()
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            # onCreate()
+            # onDestroy()
+            # onPause()
+            # onRestart()
+            # onResume()
+            # onStart()
+            # onStop()
+            - addBaby()
+            - setBaby()
+            - showTimePopup()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.BlueConnectActivity2 {
+            {static} ~ MY_PERMISSIONS_REQUEST_BLUETOOTH : int
+            ~ mBackView : View
+            ~ mHandler : Handler
+            ~ mListAddress : List<String>
+            ~ mListData : List<SearchResult>
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            ~ mVpoperateManager : VPOperateManager
+            - REQUEST_CODE : int
+            - mBAdapter : BluetoothAdapter
+            - mBManager : BluetoothManager
+            - mBScanner : BluetoothLeScanner
+            - mBleConnectStatusListener : IABleConnectStatusListener
+            - mBluetoothStateListener : IABluetoothStateListener
+            - mIsOadModel : boolean
+            - mRecyclerView : RecyclerView
+            - mSearchResponse : SearchResponse
+            - mSwipeRefreshLayout : SwipeRefreshLayout
+            - tv_connecting : TextView
+            + OnRecycleViewClick()
+            + onRefresh()
+            + onRequestPermissionsResult()
+            # getLayoutId()
+            # initListener()
+            # initView()
+            # onActivityResult()
+            ~ refreshStop()
+            - checkBLE()
+            - checkPermission()
+            - connectDevice()
+            - initBLE()
+            - initRecyleView()
+            - registerBluetoothStateListener()
+            - requestPermission()
+            - scanDevice()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.HeightInputActivity {
+            ~ mBackView : View
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            - list : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_save : TextView
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initData()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.HuangdanInputActivity {
+            ~ mBackView : View
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            - list : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_save : TextView
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initData()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.KnowledgeActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - rl_knowledge : RelativeLayout
+            - rl_video : RelativeLayout
+            # getLayoutId()
+            # initListener()
+            # initView()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.LoginActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - et_phone : EditText
+            - et_pwd : EditText
+            - tv_login : TextView
+            - tv_register : TextView
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            - loginLogic()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.MainActiivty2 {
+            ~ mHomeLayout : View
+            ~ mMeLayout : View
+            ~ mSelectedColor : int
+            ~ mUnselectedColor : int
+            + onTabSelected()
+            + onTabUnselected()
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            # onCreate()
+            # onDestroy()
+            # onPause()
+            # onRestart()
+            # onResume()
+            # onStart()
+            # onStop()
+            ~ onBabyLogic()
+            ~ onBabySelLogic()
+            - initTabFragmentHelper()
+            - setAttr()
+            - setTabTitle()
+            - setTabView()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.PhoneActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - rl_phone : RelativeLayout
+            # getLayoutId()
+            # initListener()
+            # initView()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.RegisterActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - et_name : EditText
+            - et_phone : EditText
+            - et_pwd : EditText
+            - tv_done : TextView
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            - addUserLogic()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.SlidingActivity {
+            {static} + SNAP_VELOCITY : int
+            - content : View
+            - isMenuVisible : boolean
+            - leftEdge : int
+            - mVelocityTracker : VelocityTracker
+            - menu : View
+            - menuPadding : int
+            - menuParams : LayoutParams
+            - rightEdge : int
+            - screenWidth : int
+            - xDown : float
+            - xMove : float
+            - xUp : float
+            + onTouch()
+            # getLayoutId()
+            # initListener()
+            # initView()
+            - createVelocityTracker()
+            - getScrollVelocity()
+            - initValues()
+            - recycleVelocityTracker()
+            - scrollToContent()
+            - scrollToMenu()
+            - shouldScrollToContent()
+            - shouldScrollToMenu()
+            - sleep()
+            - wantToShowContent()
+            - wantToShowMenu()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.SlidingActivity.ScrollTask {
+            # doInBackground()
+            # onPostExecute()
+            # onProgressUpdate()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.TransmitActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - btn1 : Button
+            - btn2 : Button
+            - mListData : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_connecting : TextView
+            # getLayoutId()
+            # initListener()
+            # initView()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.UserInfoActivity {
+            ~ mBackView : View
+            ~ mTitleView : TextView
+            - tv_name : TextView
+            - tv_phone : TextView
+            - tv_unlogin : TextView
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            - loginLogic()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.VolleyTestActivity {
+            ~ tv_request : TextView
+            # getLayoutId()
+            # initListener()
+            # initView()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.WeightInputActivity {
+            ~ mBackView : View
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            - list : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_save : TextView
+            # clear()
+            # getLayoutId()
+            # getTag()
+            # initData()
+            # initListener()
+            # initView()
+            # isFullScreen()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.XinlvActivity {
+            ~ mBackView : View
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            - list : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_save : TextView
+            # getLayoutId()
+            # initData()
+            # initListener()
+            # initView()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.XueyaActivity {
+            ~ mBackView : View
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            - list : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_save : TextView
+            # getLayoutId()
+            # initData()
+            # initListener()
+            # initView()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.activity {
+        class com.zaozhuang.newborn.ui.activity.XueyangActivity {
+            ~ mBackView : View
+            ~ mRightText : TextView
+            ~ mTitleView : TextView
+            - list : List<InputEntity>
+            - recyclerView : RecyclerView
+            - tv_save : TextView
+            # getLayoutId()
+            # initData()
+            # initListener()
+            # initView()
+            - genData()
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.ui.activity.BabyAddActivity .up.|> com.github.gzuliyujiang.wheelpicker.contract.OnLinkagePickedListener
+  com.zaozhuang.newborn.ui.activity.BabyAddActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.BabyAddActivity o-- com.zaozhuang.newborn.db.entity.Baby : intentBaby
+  com.zaozhuang.newborn.ui.activity.BlueConnectActivity2 .up.|> androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
+  com.zaozhuang.newborn.ui.activity.BlueConnectActivity2 .up.|> com.zaozhuang.newborn.adapter.OnRecycleViewClickCallback
+  com.zaozhuang.newborn.ui.activity.BlueConnectActivity2 -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.BlueConnectActivity2 o-- com.zaozhuang.newborn.adapter.BleScanViewAdapter : bleConnectAdatpter
+  com.zaozhuang.newborn.ui.activity.HeightInputActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.HeightInputActivity o-- com.zaozhuang.newborn.adapter.HeightInputAdapter : adapter
+  com.zaozhuang.newborn.ui.activity.HuangdanInputActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.HuangdanInputActivity o-- com.zaozhuang.newborn.adapter.HeightInputAdapter : adapter
+  com.zaozhuang.newborn.ui.activity.KnowledgeActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.LoginActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.MainActiivty2 .up.|> com.zaozhuang.newborn.ui.base.TabFragmentHelper.TabListener
+  com.zaozhuang.newborn.ui.activity.MainActiivty2 -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.MainActiivty2 o-- com.zaozhuang.newborn.ui.fragment.main.FragmentHomeV1 : mFragmentHome
+  com.zaozhuang.newborn.ui.activity.MainActiivty2 o-- com.zaozhuang.newborn.ui.fragment.main.FragmentMe : mFragmentMe
+  com.zaozhuang.newborn.ui.activity.MainActiivty2 o-- com.zaozhuang.newborn.ui.base.TabFragmentHelper : mTabFragmentHelper
+  com.zaozhuang.newborn.ui.activity.PhoneActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.RegisterActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.SlidingActivity .up.|> android.view.View.OnTouchListener
+  com.zaozhuang.newborn.ui.activity.SlidingActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.SlidingActivity +-down- com.zaozhuang.newborn.ui.activity.SlidingActivity.ScrollTask
+  com.zaozhuang.newborn.ui.activity.SlidingActivity.ScrollTask -up-|> android.os.AsyncTask
+  com.zaozhuang.newborn.ui.activity.TransmitActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.TransmitActivity o-- com.zaozhuang.newborn.adapter.TransmitAdapter : adapter
+  com.zaozhuang.newborn.ui.activity.TransmitActivity o-- com.zaozhuang.newborn.view.MyLayout : myLayout
+  com.zaozhuang.newborn.ui.activity.UserInfoActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.VolleyTestActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.WeightInputActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.WeightInputActivity o-- com.zaozhuang.newborn.adapter.HeightInputAdapter : adapter
+  com.zaozhuang.newborn.ui.activity.XinlvActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.XinlvActivity o-- com.zaozhuang.newborn.adapter.XinlvAdapter : adapter
+  com.zaozhuang.newborn.ui.activity.XueyaActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.XueyaActivity o-- com.zaozhuang.newborn.adapter.XinlvAdapter : adapter
+  com.zaozhuang.newborn.ui.activity.XueyangActivity -up-|> com.zaozhuang.newborn.ui.base.BaseActivity
+  com.zaozhuang.newborn.ui.activity.XueyangActivity o-- com.zaozhuang.newborn.adapter.XinlvAdapter : adapter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

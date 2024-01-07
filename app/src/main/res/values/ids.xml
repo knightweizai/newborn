@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="normal_view"/>
+    <item type="id" name="loading_view"/>
+    <item type="id" name="loading_item_view"/>
+    <item type="id" name="no_data_view"/>
+    <item type="id" name="no_net_view"/>
+    <item type="id" name="failed_view"/>
+    <item type="id" name="failed_click_view"/>
+    <item type="id" name="refresh_footer_gone_view"/>
+    <item type="id" name="refresh_footer_loading_view"/>
+    <item type="id" name="refresh_footer_error_view"/>
+    <item type="id" name="refresh_footer_end_view"/>
+
+    <item name="imageId" type="id"/>
+    <item name="drawable_callback_tag" type="id" />
+
+</resources>

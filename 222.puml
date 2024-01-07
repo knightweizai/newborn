@@ -1,0 +1,24 @@
+@startuml
+class com.zaozhuang.newborn.ui.activity.FamilyDoctorActivity {
++ View? mBackView
++ TextView? mTitleView
++ TextView? tv
++ Int getLayoutId()
++ void initView()
+- String genData()
++ void initListener()
+}
+class com.zaozhuang.newborn.ui.activity.ContactActivity {
++ View? mBackView
++ TextView? mTitleView
++ TextView? tv
++ Int getLayoutId()
++ void initView()
+- String genData()
++ void initListener()
+}
+
+
+com.zaozhuang.newborn.ui.base.BaseActivity <|-- com.zaozhuang.newborn.ui.activity.FamilyDoctorActivity
+com.zaozhuang.newborn.ui.base.BaseActivity <|-- com.zaozhuang.newborn.ui.activity.ContactActivity
+@enduml

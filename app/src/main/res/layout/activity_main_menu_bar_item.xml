@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/menu_bar_icon"
+        android:layout_width="69px"
+        android:layout_height="69px"
+        android:layout_above="@+id/menu_bar_title_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/menu_bar_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:layout_marginTop="9px"
+        android:layout_marginBottom="40px"
+        android:textColor="@color/bottom_bar_text_color"
+        android:textSize="29px" />
+
+</RelativeLayout>

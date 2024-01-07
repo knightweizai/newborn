@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Newborn"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Newborn">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".ui.activity.MainActiivty2"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Newborn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chart.ChartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HeightInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WeightInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HuangdanInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BabyAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BabyKnowledgeActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TransmitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BlueConnectActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.KnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FamilyDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.XinlvActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.XueyaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.XueyangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SlidingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VolleyTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.mine.TouchEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.huantansheng.easyphotos.demo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <!--蓝牙服务-->
+        <service android:name="com.inuker.bluetooth.library.BluetoothService" />
+        <!--固件升级功能相关,具体可以查看VpBluetoothSDKDem源码-->
+        <service android:name=".oad.service.DfuService" />
+        <activity android:name=".oad.activity.NotificationActivity" />
+
+
+    </application>
+
+</manifest>

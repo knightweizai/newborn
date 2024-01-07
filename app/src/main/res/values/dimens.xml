@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+
+    <!-- common title bar-->
+    <dimen name="common_title_bar_height">120px</dimen>
+    <dimen name="common_title_bar_title_text_max_width">690px</dimen>
+
+    <!-- login title bar-->
+
+    <!--default_scroll_bar-->
+
+    <!--refresh -->
+    <dimen name="refresh_footer_height">160px</dimen>
+    <dimen name="refresh_footer_text_size">35px</dimen>
+    <dimen name="margin_left">86px</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Login-->
+
+    <!--Setting-->
+
+    <!--ModifyPassword-->
+
+    <!--PerfectInformation-->
+
+    <!--FragmentMe-->
+
+    <!--news_item-->
+    <dimen name="text_size_small">35px</dimen>
+    <dimen name="text_size_content">40px</dimen>
+
+</resources>

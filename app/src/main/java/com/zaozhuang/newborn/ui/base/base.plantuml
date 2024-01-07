@@ -1,0 +1,256 @@
+@startuml
+
+title __BASE's Class Diagram__\n
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        abstract class com.zaozhuang.newborn.ui.base.BaseActivity {
+            {static} + TAG : String
+            # mContext : Context
+            - mActivityDestroyed : boolean
+            - mResumed : boolean
+            - mStatusBarView : View
+            + finish()
+            + hasResumed()
+            + isActivityAlive()
+            + isActivityDestroyed()
+            + isAlive()
+            + isShowingFailed()
+            + isShowingLoading()
+            + isShowingNoData()
+            + isShowingNoNet()
+            + isShowingNormal()
+            + setStatusBarColor()
+            + showFailed()
+            + showLoading()
+            + showNoData()
+            + showNoNet()
+            + showNormal()
+            + startActivityForResult()
+            # clear()
+            # getBackgroundDrawableResource()
+            # getHandler()
+            {abstract} # getLayoutId()
+            # getStatusBarColor()
+            # getTag()
+            # handleMessage()
+            # hideKeyboard()
+            # hideSoftInput()
+            # initData()
+            {abstract} # initListener()
+            # initNoDataView()
+            {abstract} # initView()
+            # isBlackStatusBarFontColor()
+            # isFullScreen()
+            # isUseWechatLightNavigationBar()
+            # needSetStatusBarColor()
+            # netContent()
+            # onCreate()
+            # onDestroy()
+            # onNewIntent()
+            # onPause()
+            # onResume()
+            # refreshData()
+            # setActivityAnimation()
+            - doDestroy()
+            - fitsStatusBar()
+            - initLoadingView()
+            - isSHowKeyboard()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        class com.zaozhuang.newborn.ui.base.BaseActivity.ActivityHandler {
+            - mActivityWeakReference : WeakReference<BaseActivity>
+            + dispatchMessage()
+            + handleMessage()
+            ~ ActivityHandler()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        class com.zaozhuang.newborn.ui.base.BaseActivity.NetBroadcastReceiver {
+            + onReceive()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        abstract class com.zaozhuang.newborn.ui.base.BaseFragment {
+            # mContext : Context
+            - mFragmentDestroyed : boolean
+            - view : View
+            + BaseFragment()
+            + isAlive()
+            + isFragmentAlive()
+            + isFragmentDestroyed()
+            + isShowingNoNet()
+            + onActivityCreated()
+            + onCreate()
+            + onCreateView()
+            + onDestroy()
+            + onDestroyView()
+            + onPause()
+            + onResume()
+            + showNoNet()
+            + startActivity()
+            {abstract} # clear()
+            {abstract} # getFragmentTag()
+            # getHandler()
+            {abstract} # getLayoutId()
+            # handleMessage()
+            # initData()
+            {abstract} # initListener()
+            # initNoDataView()
+            {abstract} # initView()
+            # isShowingFailed()
+            # isShowingLoading()
+            # isShowingNoData()
+            # isShowingNormal()
+            # refreshData()
+            # setLoadingBackgroundColor()
+            # showFailed()
+            # showLoading()
+            # showNoData()
+            # showNormal()
+            - initLoadingView()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        class com.zaozhuang.newborn.ui.base.BaseFragment.FragmentHandler {
+            - mFragmentWeakReference : WeakReference<BaseFragment>
+            + dispatchMessage()
+            + handleMessage()
+            ~ FragmentHandler()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        interface com.zaozhuang.newborn.ui.base.ILoadingView {
+            {abstract} + start()
+            {abstract} + stop()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        class com.zaozhuang.newborn.ui.base.LoadingView {
+            - mFailedView : View
+            - mHandler : Handler
+            - mLoadingView : View
+            - mNoDataView : View
+            - mNoNetView : View
+            - mNormalView : View
+            ~ LoadingView()
+            ~ isShowingFailed()
+            ~ isShowingLoading()
+            ~ isShowingNoData()
+            ~ isShowingNoNet()
+            ~ isShowingNormal()
+            ~ setBackgroundColor()
+            ~ setNoDataTitle()
+            ~ showLoading()
+            - showLoadingPrivate()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        class com.zaozhuang.newborn.ui.base.TabFragmentHelper {
+            - mCurrentTabView : View
+            - mFragmentManager : FragmentManager
+            - mFragments : Map<View, Fragment>
+            - mTabFrameLayoutId : int
+            + TabFragmentHelper()
+            + clear()
+            + getCurrentFragment()
+            + getCurrentTabView()
+            + getFragment()
+            + putTab()
+            + putTab()
+            + setTab()
+            + setTab()
+            + setTabListener()
+            + switchFragment()
+            - dispatchTabListener()
+        }
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace om.zaozhuang.newborn {
+      namespace ui.base {
+        interface com.zaozhuang.newborn.ui.base.TabFragmentHelper.TabListener {
+            {abstract} + onTabSelected()
+            {abstract} + onTabUnselected()
+        }
+      }
+    }
+  }
+  
+
+  com.zaozhuang.newborn.ui.base.BaseActivity .up.|> com.zaozhuang.newborn.config.Const
+  com.zaozhuang.newborn.ui.base.BaseActivity .up.|> mangogo.appbase.net.IContext
+  com.zaozhuang.newborn.ui.base.BaseActivity -up-|> androidx.fragment.app.FragmentActivity
+  com.zaozhuang.newborn.ui.base.BaseActivity o-- com.zaozhuang.newborn.ui.base.BaseActivity.ActivityHandler : mActivityHandler
+  com.zaozhuang.newborn.ui.base.BaseActivity o-- com.zaozhuang.newborn.ui.base.LoadingView : mLoadingView
+  com.zaozhuang.newborn.ui.base.BaseActivity +-down- com.zaozhuang.newborn.ui.base.BaseActivity.ActivityHandler
+  com.zaozhuang.newborn.ui.base.BaseActivity +-down- com.zaozhuang.newborn.ui.base.BaseActivity.NetBroadcastReceiver
+  com.zaozhuang.newborn.ui.base.BaseActivity.ActivityHandler -up-|> android.os.Handler
+  com.zaozhuang.newborn.ui.base.BaseActivity.NetBroadcastReceiver -up-|> android.content.BroadcastReceiver
+  com.zaozhuang.newborn.ui.base.BaseFragment .up.|> com.zaozhuang.newborn.config.Const
+  com.zaozhuang.newborn.ui.base.BaseFragment .up.|> mangogo.appbase.net.IContext
+  com.zaozhuang.newborn.ui.base.BaseFragment -up-|> androidx.fragment.app.Fragment
+  com.zaozhuang.newborn.ui.base.BaseFragment o-- com.zaozhuang.newborn.ui.base.BaseFragment.FragmentHandler : mFragmentHandler
+  com.zaozhuang.newborn.ui.base.BaseFragment o-- com.zaozhuang.newborn.ui.base.LoadingView : mLoadingView
+  com.zaozhuang.newborn.ui.base.BaseFragment +-down- com.zaozhuang.newborn.ui.base.BaseFragment.FragmentHandler
+  com.zaozhuang.newborn.ui.base.BaseFragment.FragmentHandler -up-|> android.os.Handler
+  com.zaozhuang.newborn.ui.base.LoadingView o-- com.zaozhuang.newborn.ui.base.ILoadingView : mLoadingItemView
+  com.zaozhuang.newborn.ui.base.TabFragmentHelper o-- com.zaozhuang.newborn.ui.base.TabFragmentHelper.TabListener : mTabListener
+  com.zaozhuang.newborn.ui.base.TabFragmentHelper +-down- com.zaozhuang.newborn.ui.base.TabFragmentHelper.TabListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
